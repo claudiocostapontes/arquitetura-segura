@@ -1,5 +1,3 @@
-import React from 'react';
-
 function App() {
   const posts = [
     {
@@ -120,7 +118,7 @@ function App() {
           </div>
         </section>
 
-        {/* FORMULÁRIO DE CADASTRO (Novo layout estilo formulário branco) */}
+        {/* FORMULÁRIO DE CADASTRO */}
         <section id="cadastro" className="max-w-4xl mx-auto px-6 py-24">
           <div className="bg-white rounded-3xl p-8 md:p-14 shadow-2xl">
             <h2 className="text-3xl font-bold text-slate-800 text-center mb-10">
@@ -131,32 +129,40 @@ function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-slate-600">Primeiro nome</label>
+                  <label htmlFor="firstName" className="text-sm font-semibold text-slate-600">Primeiro nome</label>
                   <input 
+                    id="firstName"
+                    name="firstName"
                     type="text" 
                     className="bg-white text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-fuchsia-600 focus:ring-1 focus:ring-fuchsia-600 transition-all"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-slate-600">Último nome</label>
+                  <label htmlFor="lastName" className="text-sm font-semibold text-slate-600">Último nome</label>
                   <input 
+                    id="lastName"
+                    name="lastName"
                     type="text" 
                     className="bg-white text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-fuchsia-600 focus:ring-1 focus:ring-fuchsia-600 transition-all"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-slate-600">Endereço de e-mail</label>
+                  <label htmlFor="email" className="text-sm font-semibold text-slate-600">Endereço de e-mail</label>
                   <input 
+                    id="email"
+                    name="email"
                     type="email" 
                     className="bg-white text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-fuchsia-600 focus:ring-1 focus:ring-fuchsia-600 transition-all"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-semibold text-slate-600">Número de telefone</label>
+                  <label htmlFor="phone" className="text-sm font-semibold text-slate-600">Número de telefone</label>
                   <input 
+                    id="phone"
+                    name="phone"
                     type="tel" 
                     className="bg-white text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-fuchsia-600 focus:ring-1 focus:ring-fuchsia-600 transition-all"
                   />
