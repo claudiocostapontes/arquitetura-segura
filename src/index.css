@@ -12,7 +12,11 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+/* Aumento da fonte global aplicado aqui */
+html { 
+  scroll-behavior: smooth; 
+  font-size: 18px; 
+}
 
 body {
   background: var(--bg);
@@ -21,6 +25,15 @@ body {
   font-weight: 300;
   line-height: 1.7;
   overflow-x: hidden;
+}
+
+/* Regras globais de texto adicionadas no topo */
+h1, .titulo-principal {
+  font-size: 2.5rem; 
+}
+
+p, .descricao {
+  font-size: 1.1rem; 
 }
 
 /* ── GRID NOISE OVERLAY ── */
@@ -43,7 +56,7 @@ nav {
   padding: 0 2.5rem;
   height: 64px;
   background: rgba(8,12,16,.85);
-  -webkit-backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Correção para o Safari/iOS */
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -359,7 +372,7 @@ h1 em {
 
 .card-title {
   font-family: 'DM Serif Display', serif;
-  font-size: 0,9rem;
+  font-size: 0.9rem; /* Ponto em vez de vírgula corrigido */
   color: var(--heading);
   line-height: 1.3;
   margin-bottom: .8rem;
