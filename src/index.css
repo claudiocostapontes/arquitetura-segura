@@ -97,7 +97,13 @@ nav ul a:hover { color: var(--accent); }
   cursor: pointer;
   transition: opacity .2s;
 }
+
 .nav-cta:hover { opacity: .85; }
+
+nav {
+  position: relative;
+  z-index: 999;
+}
 
 /* ── HERO ── */
 .hero {
