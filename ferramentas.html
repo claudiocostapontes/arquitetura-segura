@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferramentas - SecArch</title>
+  <style>
+    /* Use o mesmo CSS do sobre.html acima */
+    :root { --bg: #080c10; --surface: #0d1318; --border: #1a2530; --accent: #00ffc8; --accent2: #ff4d6d; --text: #c8d8e0; --text-dim: #5a7080; --heading: #e8f4f8; }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; margin: 0; }
+    nav { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; height: 64px; background: rgba(8,12,16,.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .logo { font-family: monospace; color: var(--accent); text-decoration: none; }
+    .logo span { color: var(--accent2); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a { color: var(--text-dim); text-decoration: none; text-transform: uppercase; font-size: .7rem; }
+    .content { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
+    h1 { color: var(--heading); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="index.html">Sec<span>Arch</span></a>
+    <ul>
+      <li><a href="artigos.html">Artigos</a></li>
+      <li><a href="trilhas.html">Trilhas</a></li>
+      <li><a href="ferramentas.html">Ferramentas</a></li>
+      <li><a href="https://cve.mitre.org/" target="_blank">CVE Watch</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <h1>Ferramentas Recomendadas</h1>
+    <p>Lista de recursos essenciais para segurança em arquitetura.</p>
+  </main>
+</body>
+</html>
