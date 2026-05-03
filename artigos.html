@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   
-  <!-- Estilos básicos para manter o padrão da página principal -->
   <style>
     :root {
       --bg:       #080c10;
@@ -20,56 +19,54 @@
       --heading:  #e8f4f8;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; line-height: 1.6; }
     
     nav {
       position: sticky; top: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 2.5rem; height: 64px;
-      background: rgba(8,12,16,.85); backdrop-filter: blur(12px);
+      background: rgba(8,12,16,.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
     .logo { font-family: 'Space Mono', monospace; font-size: 1.1rem; color: var(--accent); text-decoration: none; }
     .logo span { color: var(--accent2); }
+    
     nav ul { list-style: none; display: flex; gap: 2rem; }
     nav ul a { font-family: 'Space Mono', monospace; font-size: .72rem; color: var(--text-dim); text-decoration: none; text-transform: uppercase; }
     nav ul a:hover { color: var(--accent); }
     
     .content { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
-    h1 { font-family: 'DM Serif Display', serif; color: var(--heading); margin-bottom: 2rem; }
+    h1 { font-family: 'DM Serif Display', serif; color: var(--heading); margin-bottom: 2rem; font-size: 2.5rem; }
     
     .pdf-list { list-style: none; }
-    .pdf-list li { margin-bottom: 1rem; padding: 1rem; background: var(--surface); border: 1px solid var(--border); }
-    .pdf-list a { color: var(--accent); text-decoration: none; font-size: 1.1rem; }
-    .pdf-list a:hover { text-decoration: underline; }
+    .pdf-list li { margin-bottom: 1.5rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; transition: 0.3s; }
+    .pdf-list li:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .pdf-list a { color: var(--accent); text-decoration: none; font-size: 1.1rem; font-weight: 500; display: block; }
   </style>
 </head>
 <body>
 
-  <!-- Menu Padrão -->
   <nav>
     <a class="logo" href="index.html">Sec<span>Arch</span></a>
     <ul>
-      <li><a href="/seguranca-identidade-moderna.pdf" target="_blank" rel="noopener noreferrer">📄 Arquitetura Zero Trust em Ambientes Cloud</a></li>
+      <li><a href="artigos.html">Artigos</a></li>
       <li><a href="trilhas.html">Trilhas</a></li>
       <li><a href="ferramentas.html">Ferramentas</a></li>
-      <li><a href="https://cve.mitre.org/" target="_blank" rel="noopener noreferrer">CVE Watch</a></li>
+      <li><a href="cve-watch.html">CVE Watch</a></li>
       <li><a href="sobre.html">Sobre</a></li>
     </ul>
   </nav>
 
-  <!-- Lista de Artigos PDF -->
   <main class="content">
     <h1>Meus Artigos Publicados</h1>
+    
     <ul class="pdf-list">
-      <!-- O LINK DO SEU PDF ESTÁ AQUI -->
       <li>
-        <a href="/Dissertacao_MSI_Dissertacao_DomingosFerreira.pdf" target="_blank">📄 Dissertação MSI Domingos Ferreira</a>
+        <a href="./artigo-domingos-ferreira.pdf" target="_blank" rel="noopener noreferrer">📄 Dissertação MSI Domingos Ferreira</a>
       </li>
       
-      <!-- Exemplo de como adicionar futuros PDFs -->
       <li>
-        <a href="/exemplo-de-outro-arquivo.pdf" target="_blank">📄 Arquitetura Zero Trust em Ambientes Cloud</a>
+        <a href="./seguranca-identidade.pdf" target="_blank" rel="noopener noreferrer">📄 Arquitetura Zero Trust em Ambientes Cloud</a>
       </li>
     </ul>
   </main>
